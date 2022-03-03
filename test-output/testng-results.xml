@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="0" failed="0" skipped="1">
+<testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-03T15:19:22Z" name="Default suite" finished-at="2022-03-03T15:19:22Z" duration-ms="129">
+  <suite started-at="2022-03-03T17:10:35Z" name="Default suite" finished-at="2022-03-03T17:10:39Z" duration-ms="3025">
     <groups>
     </groups>
-    <test started-at="2022-03-03T15:19:22Z" name="Default test" finished-at="2022-03-03T15:19:22Z" duration-ms="129">
+    <test started-at="2022-03-03T17:10:35Z" name="Default test" finished-at="2022-03-03T17:10:39Z" duration-ms="3025">
       <class name="xboxtestcases.xboxVerifyLeaderboard">
-        <test-method is-config="true" signature="setUpBrowser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:xboxtestcases.xboxVerifyLeaderboard@7803bfd]" started-at="2022-03-03T09:19:22Z" name="setUpBrowser" finished-at="2022-03-03T09:19:22Z" duration-ms="0" status="FAIL">
+        <test-method is-config="true" signature="setUpBrowser(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:xboxtestcases.xboxVerifyLeaderboard@3a5ecce3]" started-at="2022-03-03T11:10:36Z" name="setUpBrowser" finished-at="2022-03-03T11:10:37Z" duration-ms="1426" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -30,66 +30,40 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalStateException">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpBrowser -->
+        <test-method signature="open()[pri:0, instance:xboxtestcases.xboxVerifyLeaderboard@3a5ecce3]" started-at="2022-03-03T11:10:37Z" name="open" finished-at="2022-03-03T11:10:38Z" duration-ms="1392" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- open -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:xboxtestcases.xboxVerifyLeaderboard@3a5ecce3]" started-at="2022-03-03T11:10:38Z" name="tearDown" finished-at="2022-03-03T11:10:38Z" duration-ms="0" status="FAIL">
+          <exception class="org.openqa.selenium.remote.UnreachableBrowserException">
             <message>
-              <![CDATA[The driver executable does not exist: C:\Users\sanford.alexander\Downloads\chromedriver.exe]]>
+              <![CDATA[Error communicating with the remote browser. It may have died.
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'PRFT-17190', ip: '10.128.205.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: EventFiringWebDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}), userDataDir=C:\Users\CARTER~1.DOO\AppData\Local\Temp\scoped_dir21268_1817383224}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:58403}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=98.0.4758.102, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 31096f45f1370463e33db3d6b5f9d4aa]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\Users\sanford.alexander\Downloads\chromedriver.exe
-	at com.google.common.base.Preconditions.checkState(Preconditions.java:518)
-	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:136)
-	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:131)
-	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:32)
-	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:137)
-	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:330)
-	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:88)
-	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:124)
-	at util.TestCaseBase.setUpChromeWin32(TestCaseBase.java:302)
-	at util.TestCaseBase.selectBrowser(TestCaseBase.java:76)
-	at util.TestCaseBase.setUpBrowser(TestCaseBase.java:62)
+              <![CDATA[org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
+System info: host: 'PRFT-17190', ip: '10.128.205.40', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: EventFiringWebDriver
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=98.0.4758.102 (273bf7ac8c909cde36982d27f66f3c70846a3718-refs/branch-heads/4758@{#1151}), userDataDir=C:\Users\CARTER~1.DOO\AppData\Local\Temp\scoped_dir21268_1817383224}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:58403}, webauthn:extension:credBlob=true, acceptInsecureCerts=false, browserVersion=98.0.4758.102, browserName=chrome, javascriptEnabled=true, platformName=windows, setWindowRect=true, webauthn:extension:largeBlob=true, webauthn:virtualAuthenticators=true}]
+Session ID: 31096f45f1370463e33db3d6b5f9d4aa
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:658)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:694)
+	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:533)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
-	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:653)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
-	at org.testng.TestRunner.privateRun(TestRunner.java:767)
-	at org.testng.TestRunner.run(TestRunner.java:617)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:343)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:305)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:254)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
-	at org.testng.TestNG.run(TestNG.java:1057)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalStateException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpBrowser -->
-        <test-method signature="open()[pri:0, instance:xboxtestcases.xboxVerifyLeaderboard@7803bfd]" started-at="2022-03-03T09:19:22Z" name="open" finished-at="2022-03-03T09:19:22Z" duration-ms="1" status="SKIP">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- open -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:xboxtestcases.xboxVerifyLeaderboard@7803bfd]" started-at="2022-03-03T09:19:22Z" name="tearDown" finished-at="2022-03-03T09:19:22Z" duration-ms="0" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.support.events.EventFiringWebDriver.quit()" because "util.TestCaseBase.driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.support.events.EventFiringWebDriver.quit()" because "util.TestCaseBase.driver" is null
+	at org.openqa.selenium.support.events.EventFiringWebDriver$2.invoke(EventFiringWebDriver.java:104)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.quit(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver.quit(EventFiringWebDriver.java:202)
 	at util.TestCaseBase.tearDown(TestCaseBase.java:224)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -117,9 +91,31 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.lang.RuntimeException: Process refused to die after 10 seconds, and couldn't taskkill it: Couldn't detect pid
+	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:133)
+	at org.openqa.selenium.os.ProcessUtils.killProcess(ProcessUtils.java:81)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.destroyHarder(UnixProcess.java:246)
+	at org.openqa.selenium.os.UnixProcess$SeleniumWatchDog.access$200(UnixProcess.java:200)
+	at org.openqa.selenium.os.UnixProcess.destroy(UnixProcess.java:126)
+	at org.openqa.selenium.os.CommandLine.destroy(CommandLine.java:153)
+	at org.openqa.selenium.remote.service.DriverService.stop(DriverService.java:221)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:94)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:637)
+	... 36 more
+Caused by: java.lang.RuntimeException: Couldn't detect pid
+	at org.openqa.selenium.os.ProcessUtils.getProcessId(ProcessUtils.java:195)
+	at org.openqa.selenium.os.ProcessUtils.killWinProcess(ProcessUtils.java:128)
+	... 44 more
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field private final long java.lang.ProcessImpl.handle accessible: module java.base does not "opens java.lang" to unnamed module @1753acfe
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:178)
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:172)
+	at org.openqa.selenium.os.ProcessUtils.getProcessId(ProcessUtils.java:181)
+	... 45 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- org.openqa.selenium.remote.UnreachableBrowserException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

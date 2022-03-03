@@ -34,8 +34,8 @@ public class XboxHomePage extends Page {
 		public XboxHomePage open() throws Exception {
 			//read the url from property file
 			Properties PROPERTIES_RESOURCES = SystemUtil
-					.loadPropertiesResources("/testdata_xbox.properties");
-			String URL = PROPERTIES_RESOURCES.getProperty("xbox.url");
+					.loadPropertiesResources("/xbox_leaderboards.properties");
+			String URL = PROPERTIES_RESOURCES.getProperty("baseUrl");
 			TestCaseBase.threadDriver.get().navigate().to(URL);
 			
 			//return this means browser stays on XboxHomePage
